@@ -26,7 +26,8 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'aoq%ln&k2!zh_0g-k-k%(1q+1p=n%ade#bl_2!oejtxs@w1b09'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ankitarm-basictodolistapp.herokuapp.com','127.0.0.1']
 
