@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
 import dj_database_url
 #from decouple import config
 
@@ -132,7 +131,8 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-django_heroku.settings(())
+    
 
-
-
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
